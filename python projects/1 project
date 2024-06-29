@@ -1,0 +1,58 @@
+def temperature():
+  print("1. Celsius to Fahrenheit")
+  print("2. Fahremheit to Celsius")
+  choise = input("Enter your choise: ")
+  if choise == '1':  # Use string comparison for input
+      temp = float(input("Enter temperature in Celsius: "))
+      d = temp * 9/5 + 32
+      print(temp,"degree celsius is equal to",d,"degree Fahrenheit")
+  elif choise == '2':  # Use elif to handle the second case
+      temp = float(input("Enter temperature in Fahrenheit: "))
+      d = (temp - 32) * 5/9
+      print(temp,"degree Fahrenheit is equal to",d,"degree Celsius")
+
+
+def currency():
+   print("1. For USD to INR")
+   print("2.For INR to USD")
+   choise = int(input("Enter your choise: "))
+   if choise == 1:
+      a = (float(input("Enter USD value")))
+      b = a * 83
+      print(b," INR")
+   elif choise == 2:
+      a = float(input("Enter INR value"))
+      b = a / 83
+      print(b," USD") 
+
+
+def length():
+   print("1. For Centimeter to Meter ")
+   print("2. For Meter to Centimeter")
+   choise = int(input("Enter your choise: "))
+   if choise == 1:
+      a = float(input("Enter value: "))
+      b = a * 0.01
+      print(b,"meter")
+   elif choise == 2:
+      a = float(input("Enter value: "))
+      b = a * 100
+      print(b,"centimeter")
+
+
+def main():
+   print ("**Welcome to value conveter**")
+print("Select any one option")
+print("1.For Temperature conveter")
+print("2.For Currency conveter")
+print("3.For Length conveter")
+print("4.For closeing conveter")
+choise2 = int(input("Select any one conveter"))
+if choise2 == 1:
+   temperature()
+elif choise2 == 2:
+   currency()
+elif choise2 == 3:
+   length()
+elif choise2 == 4:
+   print("...Existing...")
